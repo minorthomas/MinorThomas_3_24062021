@@ -7,10 +7,16 @@ body{
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 img{
     width: 30px;
     height: 30px;
 }
+
 
 /*****TOPBAR*****/
 
@@ -22,10 +28,8 @@ img{
     font-weight: 400;
     height: 55px;
     font-size: 1.7em;
-    margin: 0 0 2px 0;
-    border: solid 1px #c9c9c9;
-    -webkit-box-shadow: 2px 4px 13px 0 rgba(95, 95, 95,,0.30); 
-    box-shadow: 2px 4px 13px 0 rgba(95, 95, 95, 0.30);
+    margin: 0;
+    padding-top: 8px;
 }
 
 
@@ -40,10 +44,46 @@ img{
     font-weight: 100;
     font-size: 0.61em;
     margin: 0;
-    background-color: #e7e7e7;
+    background: rgb(231,231,231);
+    background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
 }
 
 .topbar_info_icon{
     margin-right: 10px;
     font-size: 1.48em;
+}
+
+/*****BOOKING*****/
+
+.booking{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+}
+
+.booking_title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.booking_info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.booking_link{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 20px;
 }
