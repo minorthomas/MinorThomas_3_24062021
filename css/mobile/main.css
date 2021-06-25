@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin: 0 20px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,10 +13,6 @@ body {
 body a {
   text-decoration: none;
   color: inherit;
-}
-body img {
-  width: 30px;
-  height: 30px;
 }
 
 .topbar .topbar-logo {
@@ -131,6 +131,60 @@ body img {
 }
 .tutorial .tutorial-button-list .tutorial-button i {
   margin: 0 25px 0 5px;
+}
+
+.restaurants {
+  font-family: "Roboto", sans-serif;
+  background: #F1F1F1;
+  padding: 40px 0;
+}
+.restaurants h2 {
+  margin: 0;
+}
+.restaurants .restaurants-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3em 15em 15em 15em 15em;
+  row-gap: 1.5em;
+  grid-template-areas: "restaurants-area-title" "restaurants-area-1" "restaurants-area-2" "restaurants-area-3" "restaurants-area-4";
+}
+.restaurants .restaurants-cards .restaurants-card {
+  background: #FFF;
+  border: solid 0 transparent;
+  border-radius: 15px;
+}
+.restaurants .restaurants-cards .restaurants-card img {
+  width: 100%;
+  height: 180px;
+  border: solid 0 transparent;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.restaurants .restaurants-cards .restaurants-card .restaurants-card-desc h3 {
+  margin: 0;
+}
+.restaurants .restaurants-cards .restaurants-card .restaurants-card-desc p {
+  margin: 0;
+}
+
+.restaurants-area-title {
+  grid-area: restaurants-area-title;
+}
+
+.restaurants-area-1 {
+  grid-area: restaurants-area-1;
+}
+
+.restaurants-area-2 {
+  grid-area: restaurants-area-2;
+}
+
+.restaurants-area-3 {
+  grid-area: restaurants-area-3;
+}
+
+.restaurants-area-4 {
+  grid-area: restaurants-area-4;
 }
 
 /*# sourceMappingURL=main.css.map */
