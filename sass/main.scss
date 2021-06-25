@@ -1,0 +1,147 @@
+$buttonColorPurple: rgb(147,86,220);
+$buttonColorGradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+$backgroundGrey: #F1F1F1;
+
+$fontWhite: #FFF;
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontShrikhand: 'Shrikhand', cursive;
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+.topbar{
+    .topbar-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $fontShrikhand;
+        font-weight: 400;
+        height: 55px;
+        font-size: 1.7em;
+        margin: 0;
+        padding-top: 8px;
+    }
+    .topbar-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 43px;
+        font-family: $fontRoboto;
+        font-weight: 100;
+        font-size: 0.61em;
+        margin: 0;
+        background: rgb(231,231,231);
+        background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
+    }
+    .topbar-info-icon{
+        margin-right: 10px;
+        font-size: 1.48em;
+    }
+}
+
+.booking{
+    font-family: $fontRoboto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    justify-content: space-around;
+    background-color: $backgroundGrey;
+    .booking-desc{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        width: 280px;
+        justify-content: space-around;
+        margin-top: 20px;
+        .booking-desc-title{
+            text-align: center;
+            margin: 0;
+            font-weight: 800;
+        }
+        .booking-desc-info{
+            text-align: center;
+            margin: 0;
+            font-weight: 300;
+        }
+    }
+    .booking-link{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 20px;
+        color: $fontWhite;
+        background: $buttonColorPurple;
+        background: $buttonColorGradient;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        font-size: 0.95em;
+        margin-bottom: 45px;
+    }
+}
+
+.tutorial{
+    font-family: $fontRoboto;
+    margin: 45px 30px 50px 30px;
+    .tutorial-button-list{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-between;
+        .tutorial-button{
+            border: solid 1px transparent;
+            border-radius: 20px;
+            background-color: $backgroundGrey;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            padding: 10px;
+            -webkit-box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25); 
+            box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25);
+            .tutorial-button-number{
+                position: relative;
+                left: -20px;
+                padding: 4px 8px;
+                color: $fontWhite;
+                background: $buttonColorPurple;
+                border: solid 0px transparent;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                -moz-border-radius: 15px;
+                -ms-border-radius: 15px;
+                -o-border-radius: 15px;
+            }   
+            .purple{
+                color: $buttonColorPurple;
+            }
+            i{
+                margin: 0 25px 0 5px;
+            }
+        }
+    }
+}
