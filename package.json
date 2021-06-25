@@ -1,0 +1,19 @@
+{
+  "name": "minorthomas_3_24062021",
+  "version": "1.0.0",
+  "description": "MinorThomas_3_24062021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minorthomas/MinorThomas_3_24062021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minorthomas/MinorThomas_3_24062021/issues"
+  },
+  "homepage": "https://github.com/minorthomas/MinorThomas_3_24062021#readme"
+}
