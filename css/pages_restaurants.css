@@ -1,0 +1,143 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.topbar i {
+  font-size: 1.2em;
+}
+.topbar h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin: auto;
+  font-size: 1.8em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #F1F1F1;
+  border: solid 0px transparent;
+  border-radius: 40px 40px 0 0;
+  margin-top: 230px;
+}
+.menu .menu-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 25px 0 25px;
+}
+.menu .menu-header .menu-header-title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+.menu .menu-header i {
+  font-size: 1.4em;
+}
+.menu .menu-bloc .menu-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 280px;
+  margin-bottom: 30px;
+}
+.menu .menu-bloc .menu-cards .menu-title {
+  font-size: 1em;
+  padding-bottom: 4px;
+  font-weight: 400;
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
+  margin: 0;
+}
+.menu .menu-bloc .menu-cards .menu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 65px;
+  background-color: #FFF;
+  border: solid 0px transparent;
+  border-radius: 15px;
+  padding: 10px 12px;
+}
+.menu .menu-bloc .menu-cards .menu-card .menu-card-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0;
+}
+.menu .menu-bloc .menu-cards .menu-card .menu-card-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu .menu-bloc .menu-cards .menu-card .menu-card-desc .menu-card-desc-info {
+  margin: 0;
+}
+.menu .menu-bloc .menu-cards .menu-card .menu-card-desc .menu-card-desc-price {
+  margin: 0;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #303030;
+  color: #FFF;
+}
+.footer .footer-title {
+  display: inline-block;
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  font-size: 1.4em;
+  padding: 20px 0;
+}
+.footer .footer-link {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+  padding-bottom: 30px;
+}
+.footer .footer-link .footer-link-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer .footer-link .footer-link-icon p {
+  margin: 0;
+}
+.footer .footer-link .footer-link-icon i {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=pages_restaurants.css.map */

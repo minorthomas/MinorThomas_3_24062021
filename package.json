@@ -4,7 +4,7 @@
   "description": "MinorThomas_3_24062021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/mobile/main.css"
+    "sass": "sass --watch ./sass/pages_restaurants.scss:./css/pages_restaurants.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/minorthomas/MinorThomas_3_24062021/issues"
   },
-  "homepage": "https://github.com/minorthomas/MinorThomas_3_24062021#readme"
+  "homepage": "https://github.com/minorthomas/MinorThomas_3_24062021#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
 }
