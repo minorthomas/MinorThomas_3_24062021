@@ -25,6 +25,8 @@ body{
 
 }
 
+/*****TOPBAR*****/
+
 .topbar{
     .topbar-logo{
         display: flex;
@@ -55,6 +57,8 @@ body{
         font-size: 1.48em;
     }
 }
+
+/*****BOOKING*****/
 
 .booking{
     font-family: $fontRoboto;
@@ -99,6 +103,8 @@ body{
         margin-bottom: 45px;
     }
 }
+
+/*****TUTORIAL*****/
 
 .tutorial{
     font-family: $fontRoboto;
@@ -147,6 +153,8 @@ body{
     }
 }
 
+/*****RESTAURANTS*****/
+
 .restaurants{
     font-family: $fontRoboto;
     background: $backgroundGrey;
@@ -169,7 +177,6 @@ body{
                              "restaurants-area-3"
                              "restaurants-area-4";
         .restaurants-card{
-            background: $fontWhite;
             border: solid 0 transparent;
             border-radius: 15px;
             .restaurants-card-news-1{
@@ -205,6 +212,7 @@ body{
                 justify-content: space-between;
                 align-items: center;
                 padding: 10px;
+                background: $fontWhite;
                 i{
                     font-size: 1.4em;
                     margin-right: 10px;
@@ -243,6 +251,8 @@ body{
 .restaurants-area-4{
     grid-area: restaurants-area-4
 }
+
+/*****FOOTER*****/
 
 .footer{
     background-color: rgb(48, 48, 48);

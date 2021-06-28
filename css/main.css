@@ -15,6 +15,7 @@ body a {
   color: inherit;
 }
 
+/*****TOPBAR*****/
 .topbar .topbar-logo {
   display: flex;
   justify-content: center;
@@ -44,6 +45,7 @@ body a {
   font-size: 1.48em;
 }
 
+/*****BOOKING*****/
 .booking {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -88,6 +90,7 @@ body a {
   margin-bottom: 45px;
 }
 
+/*****TUTORIAL*****/
 .tutorial {
   font-family: "Roboto", sans-serif;
   margin: 45px 30px 50px 30px;
@@ -135,6 +138,7 @@ body a {
   margin: 0 25px 0 5px;
 }
 
+/*****RESTAURANTS*****/
 .restaurants {
   font-family: "Roboto", sans-serif;
   background: #F1F1F1;
@@ -155,7 +159,6 @@ body a {
   grid-template-areas: "restaurants-area-title" "restaurants-area-1" "restaurants-area-2" "restaurants-area-3" "restaurants-area-4";
 }
 .restaurants .restaurants-cards .restaurants-card {
-  background: #FFF;
   border: solid 0 transparent;
   border-radius: 15px;
 }
@@ -192,6 +195,7 @@ body a {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background: #FFF;
 }
 .restaurants .restaurants-cards .restaurants-card .restaurants-card-info i {
   font-size: 1.4em;
@@ -231,6 +235,7 @@ body a {
   grid-area: restaurants-area-4;
 }
 
+/*****FOOTER*****/
 .footer {
   background-color: #303030;
   color: #FFF;

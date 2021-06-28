@@ -36,6 +36,8 @@ img{
     z-index: -1;
 }
 
+/*****TOPBAR*****/
+
 .topbar{
     display: flex;
     flex-direction: row;
@@ -52,6 +54,8 @@ img{
         font-size: 1.8em;
     }
 }
+
+/*****MENU*****/
 
 .menu{
     display: flex;
@@ -133,6 +137,8 @@ img{
         margin: 10px auto 80px auto;
     }
 }
+
+/*****FOOTER*****/
 
 .footer{
     background-color: rgb(48, 48, 48);

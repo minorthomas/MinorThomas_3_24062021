@@ -23,6 +23,7 @@ img {
   z-index: -1;
 }
 
+/*****TOPBAR*****/
 .topbar {
   display: flex;
   flex-direction: row;
@@ -40,6 +41,7 @@ img {
   font-size: 1.8em;
 }
 
+/*****MENU*****/
 .menu {
   display: flex;
   flex-direction: column;
@@ -62,6 +64,7 @@ img {
   font-weight: 400;
   font-size: 1.6em;
   margin: 20px 0;
+  letter-spacing: 0.6px;
 }
 .menu .menu-header i {
   font-size: 1.4em;
@@ -119,6 +122,7 @@ img {
   margin: 10px auto 80px auto;
 }
 
+/*****FOOTER*****/
 .footer {
   background-color: #303030;
   color: #FFF;
@@ -150,4 +154,32 @@ img {
   margin-right: 15px;
 }
 
+
+.menu-area-entree{
+  grid-area: menu-area-entree;
+}
+.menu-area-meal{
+  grid-area: menu-area-meal;
+}
+.menu-area-desserts{
+  grid-area: menu-area-desserts;
+}
+
 /*# sourceMappingURL=pages_restaurants.css.map */
+
+@media only screen and (min-width: 1250px) {
+  .menu-bloc{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2em;
+    grid-template-areas: "menu-area-entree menu-area-meal menu-area-desserts";
+    margin: 0 50px;
+  }
+  .menu .menu-header .menu-header-title{
+    margin-left: 30px;
+  }
+  .menu .menu-bloc .menu-cards {
+    display: block;
+  }
+} 
