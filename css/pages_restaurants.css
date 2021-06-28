@@ -48,6 +48,7 @@ img {
   border: solid 0px transparent;
   border-radius: 40px 40px 0 0;
   margin-top: 230px;
+  height: auto;
 }
 .menu .menu-header {
   display: flex;
@@ -69,7 +70,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 280px;
   margin-bottom: 30px;
 }
 .menu .menu-bloc .menu-cards .menu-title {
@@ -78,7 +78,7 @@ img {
   font-weight: 400;
   border-bottom: solid 3px #99E2D0;
   width: 40px;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 .menu .menu-bloc .menu-cards .menu-card {
   display: flex;
@@ -88,7 +88,8 @@ img {
   background-color: #FFF;
   border: solid 0px transparent;
   border-radius: 15px;
-  padding: 10px 12px;
+  padding: 10px 15px 10px 12px;
+  margin-bottom: 15px;
 }
 .menu .menu-bloc .menu-cards .menu-card .menu-card-title {
   font-size: 1.1em;
@@ -108,6 +109,15 @@ img {
   margin: 0;
   font-weight: 700;
 }
+.menu .menu-button-order {
+  padding: 15px 50px;
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border: solid 0px transparent;
+  border-radius: 50px;
+  color: #FFF;
+  margin: 10px auto 80px auto;
+}
 
 .footer {
   background-color: #303030;
@@ -117,8 +127,8 @@ img {
   display: inline-block;
   font-family: "Shrikhand", cursive;
   font-weight: 100;
-  font-size: 1.4em;
-  padding: 20px 0;
+  font-size: 1.1em;
+  padding: 20px 0 15px 0;
 }
 .footer .footer-link {
   font-family: "Roboto", sans-serif;

@@ -61,6 +61,7 @@ img{
     border: solid 0px transparent;
     border-radius: 40px 40px 0 0 ;
     margin-top: 230px;
+    height: auto;
     .menu-header{
         display: flex;
         flex-direction: row;
@@ -82,7 +83,6 @@ img{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            height: 280px;
             margin-bottom: 30px;
             .menu-title{
                 font-size: 1.0em;
@@ -90,7 +90,7 @@ img{
                 font-weight: 400;
                 border-bottom: solid 3px $colorGreen;
                 width: 40px;
-                margin: 0;
+                margin: 0 0 20px 0;
             }
             .menu-card{
                 display: flex;
@@ -100,7 +100,8 @@ img{
                 background-color: $fontWhite;
                 border: solid 0px transparent;
                 border-radius: 15px;
-                padding: 10px 12px;
+                padding: 10px 15px 10px 12px;
+                margin-bottom: 15px;
                 .menu-card-title{
                     font-size: 1.1em;
                     font-weight: 700;
@@ -122,6 +123,15 @@ img{
             }
         }
     }
+    .menu-button-order{
+        padding: 15px 50px;
+        background: $buttonColorPurple;
+        background: $buttonColorGradient;
+        border: solid 0px transparent;
+        border-radius: 50px;
+        color: $fontWhite;
+        margin: 10px auto 80px auto;
+    }
 }
 
 .footer{
@@ -131,8 +141,8 @@ img{
         display: inline-block;
         font-family: $fontShrikhand;
         font-weight: 100;
-        font-size: 1.4em;
-        padding: 20px 0;
+        font-size: 1.1em;
+        padding: 20px 0 15px 0;
     }
     .footer-link{
         font-family: $fontRoboto;
