@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1100px) {
+
+    /*****TUTORIAL*****/
+
+    .tutorial .tutorial-button-list{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+    }
+    .tutorial .tutorial-button-list .tutorial-button{
+        margin-right: 50px;
+        padding-right: 15px;
+    }
+
+    /*****CARD*****/
+
+    .restaurants .restaurants-bloc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2em 15em 15em;
+        row-gap: 2em;
+        column-gap: 2em;
+        grid-template-areas: "restaurants-area-title restaurants-area-title"
+                             "restaurants-area-1 restaurants-area-2"
+                             "restaurants-area-3 restaurants-area-4";
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+}

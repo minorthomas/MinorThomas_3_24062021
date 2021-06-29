@@ -108,7 +108,7 @@ body{
 
 .tutorial{
     font-family: $fontRoboto;
-    margin: 45px 30px 50px 30px;
+    margin: 45px 0 50px 0;
     .tutorial-button-list{
         display: flex;
         flex-direction: column;
@@ -166,7 +166,7 @@ body{
         font-size: 1.8em;
         font-weight: 700;
     }
-    .restaurants-cards{
+    .restaurants-bloc{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3em 16em 16em 16em 16em;
@@ -177,29 +177,21 @@ body{
                              "restaurants-area-3"
                              "restaurants-area-4";
         .restaurants-card{
-            border: solid 0 transparent;
-            border-radius: 15px;
-            .restaurants-card-news-1{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .restaurants-card-new{
                 background: #99E2D0;
                 color: #227963;
                 position: absolute;
+                width: 90px;
                 padding: 7px 12px;
-                top: 850px;
-                right: 36px; 
+                top: 10px;
+                right: 10px; 
                 font-weight: 500;
                 border-radius: 3px;
             }
-            .restaurants-card-news-2{
-                background: #99E2D0;
-                color: #227963;
-                position: absolute;
-                padding: 7px 12px;
-                top: 1130px;
-                right: 36px;
-                font-weight: 500;
-                border-radius: 3px;
-            }
-            img{
+            .restaurants-card-img{
                 width: 100%;
                 height: 180px;
                 border: solid 0 transparent;
@@ -213,6 +205,8 @@ body{
                 align-items: center;
                 padding: 10px;
                 background: $fontWhite;
+                border: solid 0px transparent;
+                border-radius: 0 0 15px 15px;
                 i{
                     font-size: 1.4em;
                     margin-right: 10px;
@@ -269,6 +263,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        margin: 0;
         height: 150px;
         padding-bottom: 30px;
         .footer-link-icon{

@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1100px) {
+    .menu .menu-bloc{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      column-gap: 2em;
+      grid-template-areas: "menu-area-entree menu-area-meal menu-area-desserts";
+      margin: 0 50px;
+    }
+    .menu .menu-header .menu-header-title{
+      margin-left: 30px;
+    }
+    .menu .menu-bloc .menu-cards {
+      display: block;
+    }
+} 
