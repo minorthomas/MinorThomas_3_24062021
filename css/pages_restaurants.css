@@ -64,10 +64,25 @@ img {
   font-weight: 400;
   font-size: 1.6em;
   margin: 20px 0;
-  letter-spacing: 0.6px;
 }
-.menu .menu-header i {
+.menu .menu-header .heart-empty {
+  position: absolute;
+  color: #000;
+  background: #F1F1F1;
   font-size: 1.4em;
+  right: 35px;
+  cursor: pointer;
+}
+.menu .menu-header .heart-full {
+  font-size: 1.4em;
+  margin-right: 10px;
+  background: #FF79DA;
+  background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 .menu .menu-bloc .menu-cards {
   display: flex;
@@ -154,15 +169,10 @@ img {
   margin-right: 15px;
 }
 
-
-.menu-area-entree{
-  grid-area: menu-area-entree;
-}
-.menu-area-meal{
-  grid-area: menu-area-meal;
-}
-.menu-area-desserts{
-  grid-area: menu-area-desserts;
+.heart-empty:hover {
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 /*# sourceMappingURL=pages_restaurants.css.map */

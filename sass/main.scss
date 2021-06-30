@@ -207,9 +207,22 @@ body{
                 background: $fontWhite;
                 border: solid 0px transparent;
                 border-radius: 0 0 15px 15px;
-                i{
+                .heart-empty{
+                    position: absolute;
+                    color: #000;
+                    background: #FFF;
+                    font-size: 1.4em;
+                    right: 20px;
+                }
+                .heart-full{
                     font-size: 1.4em;
                     margin-right: 10px;
+                    background: #FF79DA;
+                    background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                    background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
                 .restaurants-card-desc{
                     display: flex;
@@ -279,3 +292,11 @@ body{
         }
     }
 }
+
+
+.heart-empty:hover{
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
