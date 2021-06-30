@@ -31,7 +31,7 @@ img {
   align-items: center;
   height: 60px;
 }
-.topbar i {
+.topbar .fa-arrow-left {
   font-size: 1.2em;
 }
 .topbar h1 {
@@ -82,6 +82,7 @@ img {
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   cursor: pointer;
 }
 .menu .menu-bloc .menu-cards {
@@ -102,12 +103,14 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   height: 65px;
   background-color: #FFF;
   border: solid 0px transparent;
   border-radius: 15px;
   padding: 10px 15px 10px 12px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .menu .menu-bloc .menu-cards .menu-card .menu-card-title {
   font-size: 1.1em;
@@ -126,6 +129,17 @@ img {
 .menu .menu-bloc .menu-cards .menu-card .menu-card-desc .menu-card-desc-price {
   margin: 0;
   font-weight: 700;
+}
+.menu .menu-bloc .menu-cards .menu-card .checkbox {
+  opacity: 0;
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  background-color: #99E2D0;
+  right: 0;
+  top: 0;
+  border: solid 0px transparent;
+  border-radius: 0 15px 15px 0;
 }
 .menu .menu-button-order {
   padding: 15px 50px;
@@ -170,9 +184,103 @@ img {
 }
 
 .heart-empty:hover {
+  height: 60px;
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+
+.fa-arrow-left:hover {
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu-button-order:hover {
+  transform: scale(1.02);
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.menu-cards-entree .menu-card {
+  -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.menu-cards-meal .menu-card {
+  -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.2s;
+}
+
+.menu-cards-desserts .menu-card {
+  -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=pages_restaurants.css.map */

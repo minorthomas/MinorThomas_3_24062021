@@ -44,7 +44,7 @@ img{
     justify-content: center;
     align-items: center;
     height: 60px;
-    i{
+    .fa-arrow-left{
         font-size: 1.2em;
     }
     h1{
@@ -95,6 +95,7 @@ img{
             background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             cursor: pointer;
         }
     }
@@ -116,12 +117,14 @@ img{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                position: relative;
                 height: 65px;
                 background-color: $fontWhite;
                 border: solid 0px transparent;
                 border-radius: 15px;
                 padding: 10px 15px 10px 12px;
                 margin-bottom: 15px;
+                cursor: pointer;
                 .menu-card-title{
                     font-size: 1.1em;
                     font-weight: 700;
@@ -140,7 +143,19 @@ img{
                         font-weight: 700;
                     }
                 }
+                .checkbox{
+                opacity: 0;
+                position: absolute;
+                width: 10px;
+                height: 100%;
+                background-color: #99E2D0;
+                right: 0;
+                top: 0;
+                border: solid 0px transparent;
+                border-radius: 0 15px 15px 0;
+                }
             }
+
         }
     }
     .menu-button-order{
@@ -188,7 +203,103 @@ img{
 }
 
 .heart-empty:hover{
+    height: 60px;
     opacity: 0;
     -webkit-transition: opacity 1s;
 	transition: opacity 1s;
 }
+
+.fa-arrow-left:hover{
+    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.menu-button-order:hover{
+    transform: scale(1.02);
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.menu-cards-entree .menu-card{
+    -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.menu-cards-meal .menu-card{
+    -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.2s;
+}
+
+.menu-cards-desserts .menu-card{
+    -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-10px);
+              transform: translateX(-10px);
+    }
+  }
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-10px);
+                transform: translateX(-10px);
+    }
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1.0);
+              transform: scale(1.0);
+    }
+    100% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1.0);
+              transform: scale(1.0);
+    }
+    100% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+  }
+
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }

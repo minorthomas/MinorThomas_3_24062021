@@ -205,6 +205,7 @@ body a {
   background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -279,6 +280,41 @@ body a {
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+
+.restaurants-card:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.tutorial .tutorial-button-list .tutorial-button:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+
+.booking-link:hover {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
