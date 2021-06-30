@@ -44,17 +44,16 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        height: 43px;
+        height: 45px;
         font-family: $fontRoboto;
         font-weight: 400;
-        font-size: 0.61em;
+        font-size: 1em;
         margin: 0;
         background: rgb(231,231,231);
         background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
-    }
-    .topbar-info-icon{
+        .topbar-info-icon{
         margin-right: 10px;
-        font-size: 1.48em;
+        }
     }
 }
 
@@ -101,6 +100,8 @@ body{
         -o-border-radius: 30px;
         font-size: 0.95em;
         margin-bottom: 45px;
+        transform: scale(1.0);
+        transition-duration: 0.4s;
     }
 }
 
@@ -129,6 +130,7 @@ body{
             -webkit-box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25); 
             box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25);
             font-size: 0.9em;
+            transition-duration: 0.4s;
             .tutorial-button-number{
                 position: relative;
                 left: -14px;
@@ -180,6 +182,8 @@ body{
             display: flex;
             flex-direction: column;
             position: relative;
+            transform: scale(1.0);
+            transition-duration: 0.4s;
             .restaurants-card-new{
                 background: #99E2D0;
                 color: #227963;
@@ -213,6 +217,7 @@ body{
                     background: #FFF;
                     font-size: 1.4em;
                     right: 20px;
+                    transition-duration: 0.4s;
                 }
                 .heart-full{
                     font-size: 1.4em;
@@ -294,6 +299,8 @@ body{
     }
 }
 
+/*****HOVER*****/
+
 
 .heart-empty:hover{
     opacity: 0;
@@ -301,9 +308,8 @@ body{
 	transition: opacity 1s;
 }
 
-.restaurants-card:hover{
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.restaurants .restaurants-card:hover{
+    transform: scale(1.02);
 }
 
 .tutorial .tutorial-button-list .tutorial-button:hover{
@@ -311,28 +317,6 @@ body{
 }
 
 .booking-link:hover{
-    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transform: scale(1.02);
 }
-
-@-webkit-keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(1.0);
-              transform: scale(1.0);
-    }
-    100% {
-      -webkit-transform: scale(1.02);
-              transform: scale(1.02);
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      -webkit-transform: scale(1.0);
-              transform: scale(1.0);
-    }
-    100% {
-      -webkit-transform: scale(1.02);
-              transform: scale(1.02);
-    }
-  }
 
