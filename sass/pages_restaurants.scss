@@ -119,6 +119,7 @@ img{
                 flex-direction: column;
                 justify-content: space-between;
                 position: relative;
+                flex-grow: 1;
                 height: 65px;
                 background-color: $fontWhite;
                 border: solid 0px transparent;
@@ -138,17 +139,19 @@ img{
                     align-items: flex-end;
                     .menu-card-desc-info{
                         margin: 0;
-                        white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                     .menu-card-desc-price{
                         margin: 0;
                         margin-left: 50px;
                         font-weight: 700;
+                        transition: all 0.4s;
                     }
                 }
                 .checkbox{
+                    display: flex;
                     opacity: 0;
                     position: absolute;
                     width: 60px;
@@ -216,27 +219,24 @@ img{
     -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
 .menu-card:hover > .checkbox > .fa-check-circle{
     -webkit-animation: rotate-center 0.6s ease-in-out both;
     animation: rotate-center 0.6s ease-in-out both;
 }
-
 .menu-card:hover > .menu-card-desc > .menu-card-desc-price{
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  padding-right: 55px;
 }
 
 .heart-empty:hover{
     height: 60px;
     opacity: 0;
     -webkit-transition: opacity 1s;
-	transition: opacity 1s;
+	  transition: opacity 1s;
 }
 
 .fa-arrow-left:hover{
-    -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-left-arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left-arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .menu-button-order:hover{
@@ -262,7 +262,9 @@ img{
     animation-delay: 1.0s;
 }
 
-@-webkit-keyframes slide-left {
+/*****ANIMATION EXIT ARROW*****/
+
+@-webkit-keyframes slide-left-arrow {
     0% {
       -webkit-transform: translateX(0);
               transform: translateX(0);
@@ -272,7 +274,7 @@ img{
               transform: translateX(-10px);
     }
   }
-@keyframes slide-left {
+@keyframes slide-left-arrow {
     0% {
         -webkit-transform: translateX(0);
                 transform: translateX(0);
@@ -282,6 +284,8 @@ img{
                 transform: translateX(-10px);
     }
 }
+
+/*****ANIMATION ORDER BUTTON*****/
 
 @-webkit-keyframes scale-up-center {
     0% {
@@ -303,6 +307,8 @@ img{
               transform: scale(1.05);
     }
   }
+
+/*****ANIMATION CARDS MENU*****/
 
   @-webkit-keyframes slide-in-bottom {
     0% {
@@ -368,8 +374,8 @@ img{
 
 @-webkit-keyframes rotate-center {
     0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
+      -webkit-transform: rotate(200deg);
+              transform: rotate(200deg);
     }
     100% {
       -webkit-transform: rotate(360deg);
@@ -378,36 +384,11 @@ img{
   }
   @keyframes rotate-center {
     0% {
-      -webkit-transform: rotate(0);
-              transform: rotate(0);
+      -webkit-transform: rotate(200deg);
+              transform: rotate(200deg);
     }
     100% {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
     }
   }
-
-/*****ANIMATION PRICE CARD MENU*****/
-
-  @-webkit-keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-65px);
-              transform: translateX(-65px);
-    }
-  }
-  @keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-65px);
-              transform: translateX(-65px);
-    }
-  }
-  
-  
