@@ -13,6 +13,9 @@
     .menu-cards .menu-card-desc .menu-card-desc-info{
       margin: 0;
     }
+    .menu .menu-bloc .menu-cards {
+      display: block;
+    }
 } 
 
 @media only screen and (min-width: 1370px) {
@@ -32,6 +35,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
   }
 } 
