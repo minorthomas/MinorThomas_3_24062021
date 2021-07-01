@@ -21,7 +21,6 @@ body{
         text-decoration: none;
         color: inherit;
     }
-
 }
 
 .container{
@@ -118,8 +117,6 @@ img{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                position: relative;
-                flex-grow: 1;
                 height: 65px;
                 background-color: $fontWhite;
                 border: solid 0px transparent;
@@ -142,10 +139,11 @@ img{
                         overflow: hidden;
                         text-overflow: ellipsis;
                         white-space: nowrap;
+                        overflow-wrap: normal;
                     }
                     .menu-card-desc-price{
                         margin: 0;
-                        margin-left: 50px;
+                        margin-left: 15px;
                         font-weight: 700;
                         transition: all 0.4s;
                     }
@@ -236,30 +234,44 @@ img{
 
 .fa-arrow-left:hover{
     -webkit-animation: slide-left-arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-left-arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left-arrow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .menu-button-order:hover{
     transform: scale(1.02);
-	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.menu-cards-entree .menu-card{
+/****ENTRANCES ANIMATION*****/
+
+.menu-card-1{
     -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.menu-cards-meal .menu-card{
+.menu-card-2{
     -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-    animation-delay: 0.5s;
+        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.2s;
 }
 
-.menu-cards-desserts .menu-card{
+.menu-card-3{
     -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
-    animation-delay: 1.0s;
+        animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+    animation-delay: 0.4s;
+}
+
+.menu-card-4{
+  -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+  animation-delay: 0.6s;
+}
+
+/*****ANIMATION FOOTER LINK*****/
+
+.footer-link a:hover{
+    text-decoration: underline;
 }
 
 /*****ANIMATION EXIT ARROW*****/
@@ -312,8 +324,8 @@ img{
 
   @-webkit-keyframes slide-in-bottom {
     0% {
-      -webkit-transform: translateY(200px);
-              transform: translateY(200px);
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
       opacity: 0;
     }
     100% {
@@ -324,8 +336,8 @@ img{
   }
   @keyframes slide-in-bottom {
     0% {
-      -webkit-transform: translateY(200px);
-              transform: translateY(200px);
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
       opacity: 0;
     }
     100% {

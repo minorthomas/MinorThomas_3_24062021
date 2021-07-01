@@ -104,8 +104,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  flex-grow: 1;
   height: 65px;
   background-color: #FFF;
   border: solid 0px transparent;
@@ -130,10 +128,11 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow-wrap: normal;
 }
 .menu .menu-bloc .menu-cards .menu-card .menu-card-desc .menu-card-desc-price {
   margin: 0;
-  margin-left: 50px;
+  margin-left: 15px;
   font-weight: 700;
   transition: all 0.4s;
 }
@@ -228,21 +227,33 @@ img {
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.menu-cards-entree .menu-card {
+/****ENTRANCES ANIMATION*****/
+.menu-card-1 {
   -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.menu-cards-meal .menu-card {
+.menu-card-2 {
   -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.5s;
+  animation-delay: 0.2s;
 }
 
-.menu-cards-desserts .menu-card {
+.menu-card-3 {
   -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
+  animation-delay: 0.4s;
+}
+
+.menu-card-4 {
+  -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.6s;
+}
+
+/*****ANIMATION FOOTER LINK*****/
+.footer-link a:hover {
+  text-decoration: underline;
 }
 
 /*****ANIMATION EXIT ARROW*****/
@@ -290,8 +301,8 @@ img {
 /*****ANIMATION CARDS MENU*****/
 @-webkit-keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(200px);
-    transform: translateY(200px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
@@ -302,8 +313,8 @@ img {
 }
 @keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(200px);
-    transform: translateY(200px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   100% {
