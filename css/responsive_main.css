@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 850px) {
 
     /*****TUTORIAL*****/
 
@@ -18,7 +18,7 @@
     .restaurants .restaurants-bloc{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2em 15em 15em;
+        grid-template-rows: 2em 16.5em 16.5em;
         row-gap: 2em;
         column-gap: 2em;
         grid-template-areas: "restaurants-area-title restaurants-area-title"
@@ -31,8 +31,19 @@
 @media only screen and (min-width: 1440px) {
 
     .container{
-        max-width: 1400px;
+        max-width: 1300px;
         margin: auto;
+    }
+
+    .restaurants .restaurants-bloc{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2em 16.5em 16.5em;
+        row-gap: 2em;
+        column-gap: 2em;
+        grid-template-areas: "restaurants-area-title restaurants-area-title"
+                             "restaurants-area-1 restaurants-area-2"
+                             "restaurants-area-3 restaurants-area-4";
     }
 
 }

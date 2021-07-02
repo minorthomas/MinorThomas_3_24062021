@@ -4,7 +4,7 @@
   "description": "MinorThomas_3_24062021",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/pages_restaurants.scss:./css/pages_restaurants.css"
+    "sass": "sass --watch ./sass/main.scss:./css/main.css"
   },
   "repository": {
     "type": "git",

@@ -102,6 +102,8 @@ body{
         margin-bottom: 45px;
         transform: scale(1.0);
         transition-duration: 0.4s;
+        -webkit-box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45); 
+        box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45);
     }
 }
 
@@ -171,7 +173,7 @@ body{
     .restaurants-bloc{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 3em 16em 16em 16em 16em;
+        grid-template-rows: 3em 18em 18em 18em 18em;
         row-gap: 1.5em;
         grid-template-areas: "restaurants-area-title"
                              "restaurants-area-1"
@@ -197,7 +199,7 @@ body{
             }
             .restaurants-card-img{
                 width: 100%;
-                height: 180px;
+                height: 200px;
                 border: solid 0 transparent;
                 border-radius: 15px 15px 0 0;
                 object-fit: cover;
