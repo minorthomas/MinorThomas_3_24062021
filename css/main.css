@@ -42,6 +42,14 @@ body a {
 }
 .topbar .topbar-info .topbar-info-icon {
   margin-right: 10px;
+  margin-left: 60px;
+}
+.topbar .topbar-info .topbar-info-location {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  border: none;
+  background-color: #e7e7e7;
 }
 
 /*****BOOKING*****/

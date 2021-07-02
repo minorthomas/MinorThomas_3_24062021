@@ -53,6 +53,14 @@ body{
         background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
         .topbar-info-icon{
         margin-right: 10px;
+        margin-left: 60px;
+        }
+        .topbar-info-location{
+            font-family: $fontRoboto;
+            font-weight: 700;
+            font-size: 0.9em;
+            border: none;
+            background-color: rgb(231,231,231);
         }
     }
 }
