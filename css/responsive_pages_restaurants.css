@@ -1,11 +1,11 @@
 @media only screen and (min-width: 1250px) {
     .menu .menu-bloc{
       display: grid;
-      grid-template-columns: 22em 22em 22em;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
       grid-template-rows: 1fr;
       column-gap: 3em;
       grid-template-areas: "menu-area-entree menu-area-meal menu-area-desserts";
-      margin: auto;
+      margin: 0 50px;
     }
     .menu .menu-header .menu-header-title{
       margin-left: 30px;
@@ -16,25 +16,4 @@
     .menu .menu-bloc .menu-cards {
       display: block;
     }
-} 
-
-@media only screen and (min-width: 1370px) {
-  .menu .menu-bloc{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 2em;
-    grid-template-areas: "menu-area-entree menu-area-meal menu-area-desserts";
-    margin: 0 50px;
-  }
-  .menu .menu-header .menu-header-title{
-    margin-left: 30px;
-  }
-  .menu-cards .menu-card-desc .menu-card-desc-info{
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow-wrap: break-word;
-  }
-} 
+}
