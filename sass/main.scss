@@ -61,6 +61,7 @@ body{
             font-size: 0.9em;
             border: none;
             background-color: rgb(231,231,231);
+            outline: none;
         }
     }
 }
@@ -328,5 +329,9 @@ body{
 
 .booking-link:hover{
     transform: scale(1.02);
+}
+
+.footer-link .hover:hover{
+    text-decoration: underline;
 }
 
