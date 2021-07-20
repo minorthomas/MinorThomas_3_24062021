@@ -1,0 +1,100 @@
+$buttonColorPurple: rgb(147,86,220);
+$buttonColorGradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+
+$backgroundGrey: #F1F1F1;
+
+$fontWhite: #FFF;
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontShrikhand: 'Shrikhand', cursive;
+
+/*****TOPBAR*****/
+
+.topbar{
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $fontShrikhand;
+        font-weight: 400;
+        height: 55px;
+        font-size: 1.7em;
+        margin: 0;
+        padding-top: 8px;
+    }
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        font-family: $fontRoboto;
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0;
+        background: rgb(231,231,231);
+        background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
+        &__icon{
+        margin-right: 10px;
+        margin-left: 60px;
+        }
+        &__location{
+            font-family: $fontRoboto;
+            font-weight: 700;
+            font-size: 0.9em;
+            border: none;
+            background-color: rgb(231,231,231);
+            outline: none;
+        }
+    }
+}
+
+/*****BOOKING*****/
+
+.booking{
+    font-family: $fontRoboto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    justify-content: space-around;
+    background-color: $backgroundGrey;
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        width: 280px;
+        justify-content: space-around;
+        margin-top: 20px;
+        &__title{
+            text-align: center;
+            margin: 0;
+            font-weight: 700;
+        }
+        &__info{
+            text-align: center;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 20px;
+        color: $fontWhite;
+        background: $buttonColorPurple;
+        background: $buttonColorGradient;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        font-size: 0.95em;
+        margin-bottom: 45px;
+        transform: scale(1.0);
+        transition-duration: 0.4s;
+        -webkit-box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45); 
+        box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45);
+    }
+}

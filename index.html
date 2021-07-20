@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LOADING SPINNER-->
     <link rel="stylesheet" href="css/loader/loader.css">
+    <!--HEADER-->
+    <link rel="stylesheet" href="css/main-header/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive_main.css">
     <!--FONT-->
@@ -21,26 +24,32 @@
     <title>ohmyfood</title>
 </head>
 <body>
+    <!--LOADER-->
     <div class="loader">
         <div class="loader__background"></div>
         <div class="loader__spinner"></div>
-    </div> 
-    <header class="topbar">
-        <h1 class="topbar-logo">ohmyfood</h1>
-        <div class="topbar-info">
-            <i class="fas fa-map-marker-alt topbar-info-icon"></i>
-            <input type="text" placeholder="Paris, Belleville" class="topbar-info-location" autofocus>
+    </div>
+    <!--HEADER-->
+    <header>
+        <section class="topbar">
+            <h1 class="topbar__logo">ohmyfood</h1>
+            <div class="topbar__info">
+                <i class="fas fa-map-marker-alt topbar__info__icon"></i>
+                <input type="text" placeholder="Paris, Belleville" class="topbar__info__location" autofocus>
+            </div>
+        </section>
+        
+        <div class="booking">
+            <section class="booking__desc">
+                <h2 class="booking__desc__title">Réservez le menu qui vous convient</h2>
+                <p class="booking__desc__info">
+                Découvrez des restaurants d'exception, séléctionnés par nos soins.
+                </p>
+            </section>
+            <a href="#anchor-restaurants" class="booking__link">Explorer nos restaurants</a>
         </div>
     </header>
-    <section class="booking">
-        <article class="booking-desc">
-            <h2 class="booking-desc-title">Réservez le menu qui vous convient</h2>
-            <p class="booking-desc-info">
-            Découvrez des restaurants d'exception, séléctionnés par nos soins.
-            </p>
-        </article>
-        <a href="#anchor-restaurants" class="booking-link">Explorer nos restaurants</a>
-    </section>
+
     <section class="tutorial">
         <div class="tutorial-bloc container">
             <h2 class="tutorial-title">Fonctionnement</h2>

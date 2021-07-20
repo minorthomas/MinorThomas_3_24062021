@@ -1,5 +1,6 @@
 *, *::after, *::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -10,96 +11,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body a {
   text-decoration: none;
   color: inherit;
-}
-
-/*****TOPBAR*****/
-.topbar .topbar-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  height: 55px;
-  font-size: 1.7em;
-  margin: 0;
-  padding-top: 8px;
-}
-.topbar .topbar-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 45px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  margin: 0;
-  background: #e7e7e7;
-  background: linear-gradient(0deg, #e7e7e7 0%, #e7e7e7 91%, #dddddd 95%, #cfcfcf 100%);
-}
-.topbar .topbar-info .topbar-info-icon {
-  margin-right: 10px;
-  margin-left: 60px;
-}
-.topbar .topbar-info .topbar-info-location {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 0.9em;
-  border: none;
-  background-color: #e7e7e7;
-  outline: none;
-}
-
-/*****BOOKING*****/
-.booking {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 270px;
-  justify-content: space-around;
-  background-color: #F1F1F1;
-}
-.booking .booking-desc {
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-  width: 280px;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-.booking .booking-desc .booking-desc-title {
-  text-align: center;
-  margin: 0;
-  font-weight: 700;
-}
-.booking .booking-desc .booking-desc-info {
-  text-align: center;
-  margin: 0;
-  font-weight: 400;
-}
-.booking .booking-link {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 13px 20px;
-  color: #FFF;
-  background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-  font-size: 0.95em;
-  margin-bottom: 45px;
-  transform: scale(1);
-  transition-duration: 0.4s;
-  -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
-  box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
 }
 
 /*****TUTORIAL*****/
@@ -107,19 +22,35 @@ body a {
   font-family: "Roboto", sans-serif;
   margin: 45px 0 50px 0;
 }
+
 .tutorial .tutorial-button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 225px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .tutorial .tutorial-button-list .tutorial-button {
   border: solid 1px transparent;
   border-radius: 20px;
   background-color: #F1F1F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -128,8 +59,10 @@ body a {
   -webkit-box-shadow: 4px 3px 16px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 3px 16px 0px rgba(0, 0, 0, 0.25);
   font-size: 0.9em;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
+
 .tutorial .tutorial-button-list .tutorial-button .tutorial-button-number {
   position: relative;
   left: -14px;
@@ -144,9 +77,11 @@ body a {
   -o-border-radius: 15px;
   font-size: 1em;
 }
+
 .tutorial .tutorial-button-list .tutorial-button .purple {
   color: #9356dc;
 }
+
 .tutorial .tutorial-button-list .tutorial-button i {
   margin: 0 25px 0 5px;
 }
@@ -157,27 +92,45 @@ body a {
   background: #F1F1F1;
   padding: 25px 0 35px 0;
 }
+
 .restaurants h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 0;
   font-size: 1.8em;
   font-weight: 700;
 }
+
 .restaurants .restaurants-bloc {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3em 18em 18em 18em 18em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 3em 18em 18em 18em 18em;
+      grid-template-rows: 3em 18em 18em 18em 18em;
   row-gap: 1.5em;
-  grid-template-areas: "restaurants-area-title" "restaurants-area-1" "restaurants-area-2" "restaurants-area-3" "restaurants-area-4";
+      grid-template-areas: "restaurants-area-title" "restaurants-area-1" "restaurants-area-2" "restaurants-area-3" "restaurants-area-4";
 }
+
 .restaurants .restaurants-bloc .restaurants-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  transform: scale(1);
-  transition-duration: 0.4s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-new {
   background: #99E2D0;
   color: #227963;
@@ -189,73 +142,106 @@ body a {
   font-weight: 500;
   border-radius: 3px;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-img {
   width: 100%;
   height: 200px;
   border: solid 0 transparent;
   border-radius: 15px 15px 0 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   background: #FFF;
   border: solid 0px transparent;
   border-radius: 0 0 15px 15px;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info .heart-empty {
   position: absolute;
   color: #000;
   background: #FFF;
   font-size: 1.4em;
   right: 20px;
-  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info .heart-full {
   font-size: 1.4em;
   margin-right: 10px;
   background: #FF79DA;
-  background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info .restaurants-card-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info .restaurants-card-desc h3 {
   margin: 0 0 3px 0;
   font-weight: 700;
 }
+
 .restaurants .restaurants-bloc .restaurants-card .restaurants-card-info .restaurants-card-desc p {
   margin: 0;
   font-weight: 400;
 }
 
 .restaurants-area-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: restaurants-area-title;
 }
 
 .restaurants-area-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: restaurants-area-1;
 }
 
 .restaurants-area-2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: restaurants-area-2;
 }
 
 .restaurants-area-3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: restaurants-area-3;
 }
 
 .restaurants-area-4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: restaurants-area-4;
 }
 
@@ -264,6 +250,7 @@ body a {
   background-color: #303030;
   color: #FFF;
 }
+
 .footer .footer-title {
   display: inline-block;
   font-family: "Shrikhand", cursive;
@@ -271,23 +258,40 @@ body a {
   font-size: 1.4em;
   padding: 20px 0;
 }
+
 .footer .footer-link {
   font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
   height: 150px;
   padding-bottom: 30px;
 }
+
 .footer .footer-link .footer-link-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .footer .footer-link .footer-link-icon p {
   margin: 0;
 }
+
 .footer .footer-link .footer-link-icon i {
   margin-right: 15px;
 }
@@ -300,7 +304,8 @@ body a {
 }
 
 .restaurants .restaurants-card:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .tutorial .tutorial-button-list .tutorial-button:hover {
@@ -308,11 +313,11 @@ body a {
 }
 
 .booking-link:hover {
-  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .footer-link .hover:hover {
   text-decoration: underline;
 }
-
 /*# sourceMappingURL=main.css.map */

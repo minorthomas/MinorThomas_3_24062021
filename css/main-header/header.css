@@ -1,0 +1,131 @@
+/*****TOPBAR*****/
+.topbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  height: 55px;
+  font-size: 1.7em;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.topbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  background: #e7e7e7;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e7e7), color-stop(91%, #e7e7e7), color-stop(95%, #dddddd), to(#cfcfcf));
+  background: linear-gradient(0deg, #e7e7e7 0%, #e7e7e7 91%, #dddddd 95%, #cfcfcf 100%);
+}
+
+.topbar__info__icon {
+  margin-right: 10px;
+  margin-left: 60px;
+}
+
+.topbar__info__location {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  border: none;
+  background-color: #e7e7e7;
+  outline: none;
+}
+
+/*****BOOKING*****/
+.booking {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #F1F1F1;
+}
+
+.booking__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 120px;
+  width: 280px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.booking__desc__title {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+}
+
+.booking__desc__info {
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+
+.booking__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 13px 20px;
+  color: #FFF;
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 0.95em;
+  margin-bottom: 45px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+}
+/*# sourceMappingURL=header.css.map */
