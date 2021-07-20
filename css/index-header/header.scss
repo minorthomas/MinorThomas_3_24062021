@@ -1,12 +1,32 @@
-$buttonColorPurple: rgb(147,86,220);
-$buttonColorGradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+/****COPY AND PASTE in ALL SCSS FILES****/
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$grey-color: #F1F1F1;
+$white-color: #FFF;
 
-$backgroundGrey: #F1F1F1;
+$roboto-font: 'Roboto', sans-serif;
+$shrikhand-font: 'Shrikhand', cursive;
 
-$fontWhite: #FFF;
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 20px;
+}
 
-$fontRoboto: 'Roboto', sans-serif;
-$fontShrikhand: 'Shrikhand', cursive;
+body{
+    margin: 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
+
+/****/
 
 /*****TOPBAR*****/
 
@@ -15,7 +35,7 @@ $fontShrikhand: 'Shrikhand', cursive;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $fontShrikhand;
+        font-family: $shrikhand-font;
         font-weight: 400;
         height: 55px;
         font-size: 1.7em;
@@ -28,7 +48,7 @@ $fontShrikhand: 'Shrikhand', cursive;
         justify-content: center;
         align-items: center;
         height: 45px;
-        font-family: $fontRoboto;
+        font-family: $roboto-font;
         font-weight: 400;
         font-size: 1em;
         margin: 0;
@@ -39,7 +59,7 @@ $fontShrikhand: 'Shrikhand', cursive;
         margin-left: 60px;
         }
         &__location{
-            font-family: $fontRoboto;
+            font-family: $roboto-font;
             font-weight: 700;
             font-size: 0.9em;
             border: none;
@@ -52,13 +72,13 @@ $fontShrikhand: 'Shrikhand', cursive;
 /*****BOOKING*****/
 
 .booking{
-    font-family: $fontRoboto;
+    font-family: $roboto-font;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 270px;
     justify-content: space-around;
-    background-color: $backgroundGrey;
+    background-color: $grey-color;
     &__desc{
         display: flex;
         flex-direction: column;
@@ -82,9 +102,9 @@ $fontShrikhand: 'Shrikhand', cursive;
         justify-content: center;
         text-align: center;
         padding: 13px 20px;
-        color: $fontWhite;
-        background: $buttonColorPurple;
-        background: $buttonColorGradient;
+        color: $white-color;
+        background: $primary-color;
+        background: $gradient;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;

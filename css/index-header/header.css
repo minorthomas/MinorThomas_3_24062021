@@ -1,3 +1,24 @@
+/****COPY AND PASTE in ALL SCSS FILES****/
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/****/
 /*****TOPBAR*****/
 .topbar__logo {
   display: -webkit-box;
@@ -111,7 +132,7 @@
   text-align: center;
   padding: 13px 20px;
   color: #FFF;
-  background: #9356dc;
+  background: #9356DC;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   border-radius: 30px;

@@ -28,17 +28,15 @@ body{
 
 /****/
 
-/*****TUTORIAL*****/
-
 .tutorial{
     font-family: $fontRoboto;
     margin: 45px 0 50px 0;
-    .tutorial-button-list{
+    &__buttons{
         display: flex;
         flex-direction: column;
         height: 225px;
         justify-content: space-between;
-        .tutorial-button{
+        &__button{
             border: solid 1px transparent;
             border-radius: 20px;
             background-color: $backgroundGrey;
@@ -54,7 +52,7 @@ body{
             box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25);
             font-size: 0.9em;
             transition-duration: 0.4s;
-            .tutorial-button-number{
+            div{
                 position: relative;
                 left: -14px;
                 padding: 2px 7px;
@@ -68,9 +66,6 @@ body{
                 -o-border-radius: 15px;
                 font-size: 1em;
             }   
-            .purple{
-                color: $buttonColorPurple;
-            }
             i{
                 margin: 0 25px 0 5px;
             }
@@ -187,63 +182,3 @@ body{
 .restaurants-area-4{
     grid-area: restaurants-area-4
 }
-
-/*****FOOTER*****/
-
-.footer{
-    background-color: rgb(48, 48, 48);
-    color: $fontWhite;
-    .footer-title{
-        display: inline-block;
-        font-family: $fontShrikhand;
-        font-weight: 100;
-        font-size: 1.4em;
-        padding: 20px 0;
-    }
-    .footer-link{
-        font-family: $fontRoboto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0;
-        height: 150px;
-        padding-bottom: 30px;
-        .footer-link-icon{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            p{
-                margin: 0;
-            }
-            i{
-                margin-right: 15px;
-            }
-        }
-    }
-}
-
-/*****HOVER*****/
-
-
-.heart-empty:hover{
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-	transition: opacity 1s;
-}
-
-.restaurants .restaurants-card:hover{
-    transform: scale(1.02);
-}
-
-.tutorial .tutorial-button-list .tutorial-button:hover{
-    background-color: rgba(147,86,220,0.1);
-}
-
-.booking-link:hover{
-    transform: scale(1.02);
-}
-
-.footer-link .hover:hover{
-    text-decoration: underline;
-}
-
