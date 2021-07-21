@@ -5,6 +5,7 @@ $tertiary-color: #99E2D0;
 $gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 $grey-color: #F1F1F1;
 $white-color: #FFF;
+$green-color: #227963;
 
 $roboto-font: 'Roboto', sans-serif;
 $shrikhand-font: 'Shrikhand', cursive;
@@ -28,8 +29,10 @@ body{
 
 /****/
 
+/*****TUTORIAL*****/
+
 .tutorial{
-    font-family: $fontRoboto;
+    font-family: $roboto-font;
     margin: 45px 0 50px 0;
     &__buttons{
         display: flex;
@@ -39,7 +42,7 @@ body{
         &__button{
             border: solid 1px transparent;
             border-radius: 20px;
-            background-color: $backgroundGrey;
+            background-color: $grey-color;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -56,8 +59,8 @@ body{
                 position: relative;
                 left: -14px;
                 padding: 2px 7px;
-                color: $fontWhite;
-                background: $buttonColorPurple;
+                color: $white-color;
+                background: $primary-color;
                 border: solid 0px transparent;
                 border-radius: 15px;
                 -webkit-border-radius: 15px;
@@ -75,18 +78,11 @@ body{
 
 /*****RESTAURANTS*****/
 
-.restaurants{
-    font-family: $fontRoboto;
-    background: $backgroundGrey;
+.restaurants-bloc{
+    font-family: $roboto-font;
+    background: $grey-color;
     padding: 25px 0 35px 0;
-    h2{
-        display: flex;
-        align-items: flex-end;
-        margin: 0;
-        font-size: 1.8em;
-        font-weight: 700;
-    }
-    .restaurants-bloc{
+    .restaurants{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3em 18em 18em 18em 18em;
@@ -96,15 +92,22 @@ body{
                              "restaurants-area-2"
                              "restaurants-area-3"
                              "restaurants-area-4";
-        .restaurants-card{
+        h2{
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+            font-size: 1.8em;
+            font-weight: 700;
+        }               
+        &__card{
             display: flex;
             flex-direction: column;
             position: relative;
             transform: scale(1.0);
             transition-duration: 0.4s;
-            .restaurants-card-new{
-                background: #99E2D0;
-                color: #227963;
+            &__new{
+                background: $tertiary-color;
+                color: $green-color;
                 position: absolute;
                 width: 90px;
                 padding: 7px 12px;
@@ -113,42 +116,23 @@ body{
                 font-weight: 500;
                 border-radius: 3px;
             }
-            .restaurants-card-img{
+            img{
                 width: 100%;
                 height: 200px;
                 border: solid 0 transparent;
                 border-radius: 15px 15px 0 0;
                 object-fit: cover;
             }
-            .restaurants-card-info{
+            &__footer{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 padding: 10px;
-                background: $fontWhite;
+                background: $white-color;
                 border: solid 0px transparent;
                 border-radius: 0 0 15px 15px;
-                .heart-empty{
-                    position: absolute;
-                    color: #000;
-                    background: #FFF;
-                    font-size: 1.4em;
-                    right: 20px;
-                    transition-duration: 0.4s;
-                }
-                .heart-full{
-                    font-size: 1.4em;
-                    margin-right: 10px;
-                    background: #FF79DA;
-                    background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                    background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-                .restaurants-card-desc{
+                &__desc{
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -161,10 +145,30 @@ body{
                         font-weight: 400;
                     }
                 }
+                &__hearts{
+                    &--empty{
+                        position: absolute;
+                        color: #000;
+                        background: $white-color;
+                        font-size: 1.4em;
+                        right: 20px;
+                        transition-duration: 0.4s;
+                    }
+                    &--full{
+                        font-size: 1.4em;
+                        margin-right: 10px;
+                        background: $secondary-color;
+                        background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                        background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                        background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
             }
         }    
     }
-
 }
 
 .restaurants-area-title{
