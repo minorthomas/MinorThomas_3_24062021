@@ -1,0 +1,65 @@
+/****COPY AND PASTE in ALL SCSS FILES****/
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+$grey-color: #F1F1F1;
+$white-color: #FFF;
+
+$roboto-font: 'Roboto', sans-serif;
+$shrikhand-font: 'Shrikhand', cursive;
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 20px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+}
+
+/****/
+
+/****FOOTER****/
+
+.footer-bloc{
+    background-color: rgb(48, 48, 48);
+    color: $white-color;
+    .footer{
+        &__home{
+            display: inline-block;
+            font-family: $shrikhand-font;
+            font-weight: 100;
+            font-size: 1.4em;
+            padding: 20px 0;
+        }
+        &__link{
+            font-family: $roboto-font;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 0;
+            height: 150px;
+            padding-bottom: 30px;
+            &__with__icon{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                p{
+                    margin: 0;
+                }
+                i{
+                    margin-right: 15px;
+                }
+            }
+        }
+    }   
+}
