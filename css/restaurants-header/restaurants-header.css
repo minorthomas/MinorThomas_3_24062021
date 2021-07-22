@@ -41,6 +41,8 @@ body a {
 
 .topbar i {
   font-size: 1.2em;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .topbar h1 {

@@ -1,0 +1,48 @@
+@media only screen and (min-width: 850px) {
+  /*****TUTORIAL*****/
+
+  .tutorial .tutorial__buttons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+  }
+  .tutorial .tutorial__buttons .tutorial__buttons__button {
+    margin: 0 30px;
+    padding-right: 30px;
+    height: 75px;
+  }
+
+  /*****CARD*****/
+
+  .restaurants-bloc .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em 16.5em 16.5em;
+    row-gap: 2em;
+    column-gap: 2em;
+    grid-template-areas:
+      "restaurants-area-title restaurants-area-title"
+      "restaurants-area-1 restaurants-area-2"
+      "restaurants-area-3 restaurants-area-4";
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .restaurants-bloc .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2em 16.5em 16.5em;
+    row-gap: 2em;
+    column-gap: 2em;
+    grid-template-areas:
+      "restaurants-area-title restaurants-area-title"
+      "restaurants-area-1 restaurants-area-2"
+      "restaurants-area-3 restaurants-area-4";
+  }
+}

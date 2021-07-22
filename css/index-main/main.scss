@@ -1,188 +1,202 @@
 /****COPY AND PASTE in ALL SCSS FILES****/
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-$grey-color: #F1F1F1;
-$white-color: #FFF;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$gradient: linear-gradient(
+  0deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$grey-color: #f1f1f1;
+$white-color: #fff;
 $green-color: #227963;
 
-$roboto-font: 'Roboto', sans-serif;
-$shrikhand-font: 'Shrikhand', cursive;
+$roboto-font: "Roboto", sans-serif;
+$shrikhand-font: "Shrikhand", cursive;
 
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-.container{
-    margin: 0 20px;
+.container {
+  margin: 0 20px;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-
+body {
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 /****/
 
 /*****TUTORIAL*****/
 
-.tutorial{
-    font-family: $roboto-font;
-    margin: 45px 0 50px 0;
-    &__buttons{
-        display: flex;
-        flex-direction: column;
-        height: 225px;
-        justify-content: space-between;
-        &__button{
-            border: solid 1px transparent;
-            border-radius: 20px;
-            background-color: $grey-color;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            padding: 3px;
-            -webkit-box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25); 
-            box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.25);
-            font-size: 0.9em;
-            transition-duration: 0.4s;
-            div{
-                position: relative;
-                left: -14px;
-                padding: 2px 7px;
-                color: $white-color;
-                background: $primary-color;
-                border: solid 0px transparent;
-                border-radius: 15px;
-                -webkit-border-radius: 15px;
-                -moz-border-radius: 15px;
-                -ms-border-radius: 15px;
-                -o-border-radius: 15px;
-                font-size: 1em;
-            }   
-            i{
-                margin: 0 25px 0 5px;
-            }
-        }
+.tutorial {
+  font-family: $roboto-font;
+  margin: 45px 0 50px 0;
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    justify-content: space-between;
+    &__button {
+      border: solid 1px transparent;
+      border-radius: 20px;
+      background-color: $grey-color;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      padding: 3px;
+      -webkit-box-shadow: 4px 3px 16px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 4px 3px 16px 0px rgba(0, 0, 0, 0.25);
+      font-size: 0.9em;
+      transition-duration: 0.4s;
+      div {
+        position: relative;
+        left: -14px;
+        padding: 2px 7px;
+        color: $white-color;
+        background: $primary-color;
+        border: solid 0px transparent;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        font-size: 1em;
+      }
+      i {
+        margin: 0 25px 0 5px;
+      }
     }
+  }
 }
 
 /*****RESTAURANTS*****/
 
-.restaurants-bloc{
-    font-family: $roboto-font;
-    background: $grey-color;
-    padding: 25px 0 35px 0;
-    .restaurants{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 3em 18em 18em 18em 18em;
-        row-gap: 1.5em;
-        grid-template-areas: "restaurants-area-title"
-                             "restaurants-area-1"
-                             "restaurants-area-2"
-                             "restaurants-area-3"
-                             "restaurants-area-4";
-        h2{
-            display: flex;
-            align-items: flex-end;
-            margin: 0;
-            font-size: 1.8em;
-            font-weight: 700;
-        }               
-        &__card{
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            transform: scale(1.0);
-            transition-duration: 0.4s;
-            &__new{
-                background: $tertiary-color;
-                color: $green-color;
-                position: absolute;
-                width: 90px;
-                padding: 7px 12px;
-                top: 10px;
-                right: 10px; 
-                font-weight: 500;
-                border-radius: 3px;
-            }
-            img{
-                width: 100%;
-                height: 200px;
-                border: solid 0 transparent;
-                border-radius: 15px 15px 0 0;
-                object-fit: cover;
-            }
-            &__footer{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                background: $white-color;
-                border: solid 0px transparent;
-                border-radius: 0 0 15px 15px;
-                &__desc{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    h3{
-                        margin: 0 0 3px 0;
-                        font-weight: 700;
-                    }
-                    p{
-                        margin: 0;
-                        font-weight: 400;
-                    }
-                }
-                &__hearts{
-                    &--empty{
-                        position: absolute;
-                        color: #000;
-                        background: $white-color;
-                        font-size: 1.4em;
-                        right: 20px;
-                        transition-duration: 0.4s;
-                    }
-                    &--full{
-                        font-size: 1.4em;
-                        margin-right: 10px;
-                        background: $secondary-color;
-                        background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                        background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                        background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
-            }
-        }    
+.restaurants-bloc {
+  font-family: $roboto-font;
+  background: $grey-color;
+  padding: 25px 0 35px 0;
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 18em 18em 18em 18em;
+    row-gap: 1.5em;
+    grid-template-areas:
+      "restaurants-area-title"
+      "restaurants-area-1"
+      "restaurants-area-2"
+      "restaurants-area-3"
+      "restaurants-area-4";
+    h2 {
+      display: flex;
+      align-items: flex-end;
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: 700;
     }
+    &__card {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transform: scale(1);
+      transition-duration: 0.4s;
+      &__new {
+        background: $tertiary-color;
+        color: $green-color;
+        position: absolute;
+        width: 90px;
+        padding: 7px 12px;
+        top: 10px;
+        right: 10px;
+        font-weight: 500;
+        border-radius: 3px;
+      }
+      img {
+        width: 100%;
+        height: 200px;
+        border: solid 0 transparent;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+      }
+      &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: $white-color;
+        border: solid 0px transparent;
+        border-radius: 0 0 15px 15px;
+        &__desc {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          h3 {
+            margin: 0 0 3px 0;
+            font-weight: 700;
+          }
+          p {
+            margin: 0;
+            font-weight: 400;
+          }
+        }
+        &__hearts {
+          &--empty {
+            position: absolute;
+            color: #000;
+            background: $white-color;
+            font-size: 1.4em;
+            right: 20px;
+            transition-duration: 0.4s;
+          }
+          &--full {
+            font-size: 1.4em;
+            margin-right: 10px;
+            background: $secondary-color;
+            background: -webkit-linear-gradient(
+              to bottom,
+              #ff79da 0%,
+              #9356dc 100%
+            );
+            background: -moz-linear-gradient(
+              to bottom,
+              #ff79da 0%,
+              #9356dc 100%
+            );
+            background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+  }
 }
 
-.restaurants-area-title{
-    grid-area: restaurants-area-title
+.restaurants-area-title {
+  grid-area: restaurants-area-title;
 }
-.restaurants-area-1{
-    grid-area: restaurants-area-1
+.restaurants-area-1 {
+  grid-area: restaurants-area-1;
 }
-.restaurants-area-2{
-    grid-area: restaurants-area-2
+.restaurants-area-2 {
+  grid-area: restaurants-area-2;
 }
-.restaurants-area-3{
-    grid-area: restaurants-area-3
+.restaurants-area-3 {
+  grid-area: restaurants-area-3;
 }
-.restaurants-area-4{
-    grid-area: restaurants-area-4
+.restaurants-area-4 {
+  grid-area: restaurants-area-4;
 }

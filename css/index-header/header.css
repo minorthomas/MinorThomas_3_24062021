@@ -1,5 +1,7 @@
 /****COPY AND PASTE in ALL SCSS FILES****/
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -92,7 +94,7 @@ body a {
   height: 270px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .booking__desc {
@@ -131,8 +133,8 @@ body a {
           justify-content: center;
   text-align: center;
   padding: 13px 20px;
-  color: #FFF;
-  background: #9356DC;
+  color: #fff;
+  background: #9356dc;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   border-radius: 30px;
@@ -142,10 +144,6 @@ body a {
   -o-border-radius: 30px;
   font-size: 0.95em;
   margin-bottom: 45px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
   -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
   box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
 }

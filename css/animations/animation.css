@@ -1,11 +1,15 @@
 /*****HOVER*****/
 .tutorial .tutorial__buttons .tutorial__buttons__button:hover {
-  background-color: rgba(147, 86, 220, 0.1);
+  background-color: rgba(147, 86, 220, 0.15);
 }
 
-.booking__link:hover {
-  -webkit-transform: scale(1.02);
-  transform: scale(1.02);
+.booking__link:hover,
+.menu__order:hover {
+  background: linear-gradient(
+    0deg,
+    rgb(154, 100, 219) 0%,
+    rgb(252, 137, 219) 100%
+  );
 }
 
 .restaurants__card__footer__hearts--empty:hover,
@@ -40,61 +44,10 @@
   padding-right: 55px;
 }
 
-/*****ANIMATION CHECKBOX*****/
-
-@-webkit-keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
-}
-@keyframes scale-up-hor-right {
-  0% {
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    opacity: 1;
-  }
+.topbar .fa-arrow-left:hover {
+  margin-left: -5px;
+  margin-right: 5px;
+  transition: 0.4s;
 }
 
-/*****ANIMATION ICON CHECKBOX*****/
-
-@-webkit-keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(200deg);
-    transform: rotate(200deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(200deg);
-    transform: rotate(200deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 /*# sourceMappingURL=animation.css.map */

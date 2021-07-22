@@ -1,120 +1,129 @@
 /****COPY AND PASTE in ALL SCSS FILES****/
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
-$gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
-$grey-color: #F1F1F1;
-$white-color: #FFF;
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$gradient: linear-gradient(
+  0deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$grey-color: #f1f1f1;
+$white-color: #fff;
 
-$roboto-font: 'Roboto', sans-serif;
-$shrikhand-font: 'Shrikhand', cursive;
+$roboto-font: "Roboto", sans-serif;
+$shrikhand-font: "Shrikhand", cursive;
 
-*, *::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-.container{
-    margin: 0 20px;
+.container {
+  margin: 0 20px;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-
+body {
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 /****/
 
 /*****TOPBAR*****/
 
-.topbar{
-    &__logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: $shrikhand-font;
-        font-weight: 400;
-        height: 55px;
-        font-size: 1.7em;
-        margin: 0;
-        padding-top: 8px;
+.topbar {
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $shrikhand-font;
+    font-weight: 400;
+    height: 55px;
+    font-size: 1.7em;
+    margin: 0;
+    padding-top: 8px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-family: $roboto-font;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+    background: rgb(231, 231, 231);
+    background: linear-gradient(
+      0deg,
+      rgba(231, 231, 231, 1) 0%,
+      rgba(231, 231, 231, 1) 91%,
+      rgba(221, 221, 221, 1) 95%,
+      rgba(207, 207, 207, 1) 100%
+    );
+    &__icon {
+      margin-right: 10px;
+      margin-left: 60px;
     }
-    &__info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 45px;
-        font-family: $roboto-font;
-        font-weight: 400;
-        font-size: 1em;
-        margin: 0;
-        background: rgb(231,231,231);
-        background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(231,231,231,1) 91%, rgba(221,221,221,1) 95%, rgba(207,207,207,1) 100%);
-        &__icon{
-        margin-right: 10px;
-        margin-left: 60px;
-        }
-        &__location{
-            font-family: $roboto-font;
-            font-weight: 700;
-            font-size: 0.9em;
-            border: none;
-            background-color: rgb(231,231,231);
-            outline: none;
-        }
+    &__location {
+      font-family: $roboto-font;
+      font-weight: 700;
+      font-size: 0.9em;
+      border: none;
+      background-color: rgb(231, 231, 231);
+      outline: none;
     }
+  }
 }
 
 /*****BOOKING*****/
 
-.booking{
-    font-family: $roboto-font;
+.booking {
+  font-family: $roboto-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 270px;
+  justify-content: space-around;
+  background-color: $grey-color;
+  &__desc {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 270px;
+    height: 120px;
+    width: 280px;
     justify-content: space-around;
-    background-color: $grey-color;
-    &__desc{
-        display: flex;
-        flex-direction: column;
-        height: 120px;
-        width: 280px;
-        justify-content: space-around;
-        margin-top: 20px;
-        &__title{
-            text-align: center;
-            margin: 0;
-            font-weight: 700;
-        }
-        &__info{
-            text-align: center;
-            margin: 0;
-            font-weight: 400;
-        }
+    margin-top: 20px;
+    &__title {
+      text-align: center;
+      margin: 0;
+      font-weight: 700;
     }
-    &__link{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 13px 20px;
-        color: $white-color;
-        background: $primary-color;
-        background: $gradient;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
-        font-size: 0.95em;
-        margin-bottom: 45px;
-        transform: scale(1.0);
-        transition-duration: 0.4s;
-        -webkit-box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45); 
-        box-shadow: 2px 3px 8px -2px rgba(0,0,0,0.45);
+    &__info {
+      text-align: center;
+      margin: 0;
+      font-weight: 400;
     }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 13px 20px;
+    color: $white-color;
+    background: $primary-color;
+    background: $gradient;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 0.95em;
+    margin-bottom: 45px;
+    -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+  }
 }

@@ -1,5 +1,7 @@
 /****COPY AND PASTE in ALL SCSS FILES****/
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -42,7 +44,7 @@ body a {
 .tutorial__buttons__button {
   border: solid 1px transparent;
   border-radius: 20px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,8 +71,8 @@ body a {
   position: relative;
   left: -14px;
   padding: 2px 7px;
-  color: #FFF;
-  background: #9356DC;
+  color: #fff;
+  background: #9356dc;
   border: solid 0px transparent;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -87,7 +89,7 @@ body a {
 /*****RESTAURANTS*****/
 .restaurants-bloc {
   font-family: "Roboto", sans-serif;
-  background: #F1F1F1;
+  background: #f1f1f1;
   padding: 25px 0 35px 0;
 }
 
@@ -130,7 +132,7 @@ body a {
 }
 
 .restaurants-bloc .restaurants__card__new {
-  background: #99E2D0;
+  background: #99e2d0;
   color: #227963;
   position: absolute;
   width: 90px;
@@ -165,7 +167,7 @@ body a {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  background: #FFF;
+  background: #fff;
   border: solid 0px transparent;
   border-radius: 0 0 15px 15px;
 }
@@ -195,7 +197,7 @@ body a {
 .restaurants-bloc .restaurants__card__footer__hearts--empty {
   position: absolute;
   color: #000;
-  background: #FFF;
+  background: #fff;
   font-size: 1.4em;
   right: 20px;
   -webkit-transition-duration: 0.4s;
@@ -205,9 +207,9 @@ body a {
 .restaurants-bloc .restaurants__card__footer__hearts--full {
   font-size: 1.4em;
   margin-right: 10px;
-  background: #FF79DA;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: #ff79da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
