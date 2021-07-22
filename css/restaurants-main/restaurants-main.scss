@@ -1,0 +1,168 @@
+/****COPY AND PASTE in ALL SCSS FILES****/
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$gradient: linear-gradient(
+  0deg,
+  rgba(147, 86, 220, 1) 0%,
+  rgba(255, 121, 218, 1) 100%
+);
+$grey-color: #f1f1f1;
+$white-color: #fff;
+
+$roboto-font: "Roboto", sans-serif;
+$shrikhand-font: "Shrikhand", cursive;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/****/
+
+/*****MENU*****/
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-family: $roboto-font;
+  background-color: $grey-color;
+  border: solid 0px transparent;
+  border-radius: 40px 40px 0 0;
+  margin-top: 230px;
+  height: auto;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px 0 25px;
+    &__title {
+      font-family: $shrikhand-font;
+      font-weight: 400;
+      font-size: 1.6em;
+      margin: 20px 0;
+    }
+    &__hearts {
+      &--empty {
+        position: absolute;
+        color: #000;
+        background: $grey-color;
+        font-size: 1.4em;
+        right: 30px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+      }
+      &--full {
+        font-size: 1.4em;
+        margin-right: 10px;
+        background: $primary-color;
+        background: -webkit-linear-gradient(
+          to bottom,
+          #ff79da 0%,
+          #9356dc 100%
+        );
+        background: -moz-linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu-bloc {
+    .menu__cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      &__title {
+        font-size: 1em;
+        padding-bottom: 4px;
+        font-weight: 400;
+        border-bottom: solid 3px $tertiary-color;
+        width: 40px;
+        margin: 0 0 20px 0;
+      }
+      &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        height: 65px;
+        background-color: $white-color;
+        border: solid 0px transparent;
+        border-radius: 15px;
+        padding: 10px 15px 10px 12px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        &__title {
+          font-size: 1.1em;
+          font-weight: 700;
+          margin: 0;
+        }
+        &__info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          &__desc {
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow-wrap: normal;
+          }
+          &__price {
+            margin: 0;
+            margin-left: 15px;
+            font-weight: 700;
+            transition: all 0.4s;
+          }
+        }
+        &__checkbox {
+          display: flex;
+          opacity: 0;
+          position: absolute;
+          width: 60px;
+          height: 100%;
+          background-color: $tertiary-color;
+          right: 0;
+          top: 0;
+          border: solid 0px transparent;
+          border-radius: 0 15px 15px 0;
+          .fa-check-circle {
+            color: $white-color;
+            font-size: 1.3em;
+            padding: 22px 20px 20px 20px;
+          }
+        }
+      }
+    }
+  }
+  &__order {
+    padding: 15px 50px;
+    background: $primary-color;
+    background: $gradient;
+    border: solid 0px transparent;
+    border-radius: 50px;
+    color: $white-color;
+    margin: 10px auto 80px auto;
+    -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+    box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+  }
+}

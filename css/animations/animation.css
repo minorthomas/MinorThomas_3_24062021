@@ -5,21 +5,95 @@
 
 .booking__link:hover {
   -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
 
-.restaurants__card__footer__hearts--empty:hover {
+.restaurants__card__footer__hearts--empty:hover,
+.menu__header__hearts--empty:hover {
   opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .restaurants .restaurants__card:hover {
   -webkit-transform: scale(1.015);
-          transform: scale(1.015);
+  transform: scale(1.015);
 }
 
 .footer__link .footer__link__hover:hover {
   text-decoration: underline;
+}
+
+.menu__cards__card:hover > .menu__cards__card__checkbox {
+  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.menu__cards__card:hover > .menu__cards__card__checkbox > .fa-check-circle {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+.menu__cards__card:hover
+  > .menu__cards__card__info
+  > .menu__cards__card__info__price {
+  padding-right: 55px;
+}
+
+/*****ANIMATION CHECKBOX*****/
+
+@-webkit-keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+@keyframes scale-up-hor-right {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1;
+  }
+}
+
+/*****ANIMATION ICON CHECKBOX*****/
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(200deg);
+    transform: rotate(200deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=animation.css.map */

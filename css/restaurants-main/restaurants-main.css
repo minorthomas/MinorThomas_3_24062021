@@ -1,1 +1,202 @@
-/* No CSS *//*# sourceMappingURL=restaurants-main.css.map */
+/****COPY AND PASTE in ALL SCSS FILES****/
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/****/
+/*****MENU*****/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
+  border: solid 0px transparent;
+  border-radius: 40px 40px 0 0;
+  margin-top: 230px;
+  height: auto;
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 25px 0 25px;
+}
+
+.menu__header__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+  margin: 20px 0;
+}
+
+.menu__header__hearts--empty {
+  position: absolute;
+  color: #000;
+  background: #f1f1f1;
+  font-size: 1.4em;
+  right: 30px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.menu__header__hearts--full {
+  font-size: 1.4em;
+  margin-right: 10px;
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.menu .menu-bloc .menu__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.menu .menu-bloc .menu__cards__title {
+  font-size: 1em;
+  padding-bottom: 4px;
+  font-weight: 400;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px;
+  margin: 0 0 20px 0;
+}
+
+.menu .menu-bloc .menu__cards__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 65px;
+  background-color: #fff;
+  border: solid 0px transparent;
+  border-radius: 15px;
+  padding: 10px 15px 10px 12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.menu .menu-bloc .menu__cards__card__title {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu .menu-bloc .menu__cards__card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.menu .menu-bloc .menu__cards__card__info__desc {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+.menu .menu-bloc .menu__cards__card__info__price {
+  margin: 0;
+  margin-left: 15px;
+  font-weight: 700;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.menu .menu-bloc .menu__cards__card__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  right: 0;
+  top: 0;
+  border: solid 0px transparent;
+  border-radius: 0 15px 15px 0;
+}
+
+.menu .menu-bloc .menu__cards__card__checkbox .fa-check-circle {
+  color: #fff;
+  font-size: 1.3em;
+  padding: 22px 20px 20px 20px;
+}
+
+.menu__order {
+  padding: 15px 50px;
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border: solid 0px transparent;
+  border-radius: 50px;
+  color: #fff;
+  margin: 10px auto 80px auto;
+  -webkit-box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+  box-shadow: 2px 3px 8px -2px rgba(0, 0, 0, 0.45);
+}
+/*# sourceMappingURL=restaurants-main.css.map */
