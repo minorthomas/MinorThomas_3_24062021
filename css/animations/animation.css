@@ -25,14 +25,15 @@
 }
 
 .menu__cards__card:hover > .menu__cards__card__checkbox {
-  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
-    both;
-  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  right: 0;
+  transition: 0.4s;
 }
+
 .menu__cards__card:hover > .menu__cards__card__checkbox > .fa-check-circle {
-  -webkit-animation: rotate-center 0.6s ease-in-out both;
-  animation: rotate-center 0.6s ease-in-out both;
+  transform: rotate(360deg);
+  transition: 0.4s;
 }
+
 .menu__cards__card:hover
   > .menu__cards__card__info
   > .menu__cards__card__info__price {
