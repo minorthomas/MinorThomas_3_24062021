@@ -1,7 +1,11 @@
 /*****HOVER*****/
+
+/****TUTORIAL BUTTON INDEX****/
+
 .tutorial .tutorial__buttons .tutorial__buttons__button:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
+/****BOOKING & ORDER BUTTON****/
 
 .booking__link:hover,
 .menu__order:hover {
@@ -10,7 +14,11 @@
     rgb(154, 100, 219) 0%,
     rgb(252, 137, 219) 100%
   );
+  box-shadow: 0px 0px 12px 0px rgba(87, 86, 86, 0.7);
+  transition: 0.3s;
 }
+
+/****HEARTS****/
 
 .restaurants__card__footer__hearts--empty:hover,
 .menu__header__hearts--empty:hover {
@@ -19,14 +27,20 @@
   transition: opacity 0.3s;
 }
 
+/****CARDS RESTAURANTS INDEX****/
+
 .restaurants .restaurants__card:hover {
   -webkit-transform: scale(1.015);
   transform: scale(1.015);
 }
 
+/****FOOTER****/
+
 .footer__link .footer__link__hover:hover {
   text-decoration: underline;
 }
+
+/****CHECKBOX & PRICE RESTAURANTS****/
 
 .menu__cards__card:hover > .menu__cards__card__checkbox {
   right: 0;
@@ -43,6 +57,8 @@
   > .menu__cards__card__info__price {
   padding-right: 55px;
 }
+
+/*****ARROW BACK HOME PAGE*****/
 
 .topbar .fa-arrow-left:hover {
   margin-left: -5px;
