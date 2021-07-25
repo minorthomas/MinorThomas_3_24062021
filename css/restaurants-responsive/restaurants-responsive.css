@@ -7,7 +7,11 @@
     grid-template-areas: "menu-area-entree menu-area-meal menu-area-desserts";
     margin: 0 50px;
   }
+  .menu .menu-bloc .menu__cards{
+    display: block;
+  }
   .menu .menu__header .menu__header__title {
     margin-left: 30px;
   }
+
 }
