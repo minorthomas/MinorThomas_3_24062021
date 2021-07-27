@@ -203,4 +203,25 @@ body a {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
+
+.menu .menu-bloc .menu__cards__entree {
+  -webkit-animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+.menu .menu-bloc .menu__cards__meal {
+  -webkit-animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.menu .menu-bloc .menu__cards__desserts {
+  -webkit-animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: entrance-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
 /*# sourceMappingURL=restaurants-main.css.map */
